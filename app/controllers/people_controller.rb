@@ -1,4 +1,6 @@
 class PeopleController < ApplicationController
+  filter_access_to :all
+    
   respond_to :html, :json
 
   before_filter :set_person, only: [:show, :edit, :update, :destroy]

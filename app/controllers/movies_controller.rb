@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+  filter_access_to :all
+  
   respond_to :html, :json, :xml
 
   before_filter :set_movie, only: [:show, :edit, :update, :destroy]

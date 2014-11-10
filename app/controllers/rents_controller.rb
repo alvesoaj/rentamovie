@@ -1,4 +1,6 @@
 class RentsController < ApplicationController
+  filter_access_to :all
+    
   respond_to :html, :json
 
   before_filter :set_rent, only: [:show, :edit, :update, :destroy]
