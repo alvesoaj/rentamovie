@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
     protect_from_forgery
 
-    # Filtro do declarative authorization para todos os controllers
+    # Filtro do declarative_authorization para todos os controllers
     before_filter { |c| Authorization.current_user = c.current_user }
     
     # mensagem em caso de usuario nao autorizado protected

@@ -1,0 +1,17 @@
+pt-BR:
+  views:
+    show: "Exibir"
+    edit: "Alterar"
+    destroy: "Remover"
+    are_you_sure: "Você está certo disso?"
+    people:
+      index:
+        listing: "Listando todas as pessoas"
+        new: "Criar uma nova pessoa"
+    rents:
+      index:
+        listing: "Listando totos os alugeis"
+        new: "Criar um novo aluguel"
+    movies:
+      index:
+        listing: "Listando totos os filmes"

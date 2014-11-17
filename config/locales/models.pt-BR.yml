@@ -1,0 +1,35 @@
+# encoding: UTF-8
+pt-BR:
+  activerecord:
+    model:
+      person: "Pessoa"
+      movie: "Filme"
+    models:
+      person: "Pessoas"
+      movie: "Filmes"
+    attributes:
+      person:
+        name: "Nome"
+        email: "e-mail"
+        address: "Endereço"
+      movie:
+        name: "Nome"
+    errors: &errors_messages
+      template:
+        header:
+          one: "Não foi possível gravar %{model}: 1 erro"
+          other: "Não foi possível gravar %{model}: %{count} erros."
+        body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+      messages:
+        save: "%{head} impedem este %{model} de ser salvo:"
+        taken: "já está em uso"
+        record_invalid: "A validação falhou: %{errors}"
+      full_messages:
+        format: "%{attribute} %{message}"
+      models:
+        user:
+          attributes:
+            username:
+              taken: "Nickname já em uso"
+            email:
+              taken: "Email já em uso"
