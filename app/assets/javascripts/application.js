@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require skel.min.js
+//= require skel-panels.min.js
+//= require init.js

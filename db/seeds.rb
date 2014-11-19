@@ -6,11 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+puts "Criando roles"
 Role.create([
     { :name => "admin" },
     { :name => "client"}
 ])
 
+puts "Criando users"
 user = User.new({
     :name => "AJ Alves",
     :email => "zerokol@ymail.com",
@@ -29,6 +31,7 @@ User.create({
     :confirmed_at => Time.now
 })
 
+puts "Criando movies"
 Movie.create([
     { :name => "Senhor dos Aneis 1", :description => "Um filme muito bom e muito longo, sim sim..." },
     { :name => "Senhor dos Aneis 2", :description => "Um filme muito bom e muito longo, sim sim..." },
