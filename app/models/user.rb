@@ -16,7 +16,7 @@ class User < Person
         (roles || []).map{|r| r.name.underscore.to_sym}
     end
 
-    ############################## REALATIONSHIPS
+    ############################## CALLBACKS
     before_create :set_before_create_user
 
     def set_before_create_user

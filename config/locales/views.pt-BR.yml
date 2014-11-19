@@ -4,6 +4,8 @@ pt-BR:
     edit: "Alterar"
     destroy: "Remover"
     are_you_sure: "Você está certo disso?"
+    pages:
+      hello: "Bem vindo a minha Locadora de Filmes!"
     people:
       index:
         listing: "Listando todas as pessoas"
