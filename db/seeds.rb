@@ -33,7 +33,7 @@ User.create({
 
 puts "Criando movies"
 Movie.create([
-    { :name => "Senhor dos Aneis 1", :description => "Um filme muito bom e muito longo, sim sim..." },
-    { :name => "Senhor dos Aneis 2", :description => "Um filme muito bom e muito longo, sim sim..." },
-    { :name => "Senhor dos Aneis 3", :description => "Um filme muito bom e muito longo, sim sim..." }
+    { :name => "Senhor dos Aneis 1", :description => "Um filme muito bom e muito longo, sim sim...", :image => File.open("app/assets/images/movies/lordofrings1.jpg") },
+    { :name => "Senhor dos Aneis 2", :description => "Um filme muito bom e muito longo, sim sim...", :image => File.open("app/assets/images/movies/lordofrings2.jpg") },
+    { :name => "Senhor dos Aneis 3", :description => "Um filme muito bom e muito longo, sim sim...", :image => File.open("app/assets/images/movies/lordofrings3.jpg") }
 ])

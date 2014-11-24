@@ -17,3 +17,13 @@ pt-BR:
     movies:
       index:
         listing: "Listando totos os filmes"
+    layouts:
+      menu:
+        index: "Inicial"
+        people: "Pessoas"
+        movies: "Filmes"
+        rents: "Alugueis"
+        roles: "Regras"
+        sign_in: "Conectar"
+        sign_up: "Cadastrar"
+        sign_out: "Desconectar"

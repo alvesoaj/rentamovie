@@ -1,7 +1,9 @@
-<h1><%= t("views.people.index.listing") %></h1>
+<header>
+    <h2><%= t("views.people.index.listing") %></h2>
+</header>
 
 <table>
-    <tr>
+    <tr >
         <th><%= t("activerecord.attributes.person.email") %></th>
         <th><%= t("activerecord.attributes.person.name") %></th>
         <th><%= t("activerecord.attributes.person.address") %></th>
@@ -15,13 +17,13 @@
         <td><%= person.email %></td>
         <td><%= person.name %></td>
         <td><%= person.address %></td>
-        <td><%= link_to t("views.show"), person %></td>
-        <td><%= link_to t("views.edit"), edit_person_path(person) %></td>
-        <td><%= link_to t("views.destroy"), person, method: :delete, data: { confirm: t("views.are_you_sure") } %></td>
+        <td><%= link_to t("views.show"), person, :class => "button" %></td>
+        <td><%= link_to t("views.edit"), edit_person_path(person), :class => "button" %></td>
+        <td><%= link_to t("views.destroy"), person, method: :delete, data: { confirm: t("views.are_you_sure") }, :class => "button" %></td>
     </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to t("views.people.index.new"), new_person_path %>
+<%= link_to t("views.people.index.new"), new_person_path, :class => "button" %>
