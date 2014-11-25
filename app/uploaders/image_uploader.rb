@@ -31,7 +31,7 @@ class ImageUploader < CarrierWave::Uploader::Base
     #   # do something
     # end
 
-    process :convert => "png"
+    # process :convert => "png"
 
     # Create different versions of your uploaded files:
     version :thumb do
