@@ -1,5 +1,7 @@
 Projeto de test do curso "New to Pro em Ruby on Rais" do Interaje Academy
 
+https://devcenter.heroku.com/articles/getting-started-with-rails3
+
 Sempre que modificar os assets rodar:
     bundle exec rake assets:precompile
 antes de do deploy par ao heroku.
