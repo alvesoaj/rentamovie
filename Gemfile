@@ -5,13 +5,26 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development do
+    gem 'sqlite3'
+end
+
+# No Heroko apenas funciona o postgres
+group :production do
+    gem 'pg'
+end
 
 gem 'devise' # Autenticacao
 gem 'declarative_authorization' # Autorizacao
 
+# Gem para upload de imagem
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog', '~> 1.3.1'
+
+# Gem para o S3 Amazon
+gem 'aws-s3'
+gem 'aws-sdk'
 
 # Gems used only for assets and not required
 # in production environments by default.
