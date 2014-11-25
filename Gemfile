@@ -26,6 +26,11 @@ gem 'fog', '~> 1.3.1'
 gem 'aws-s3'
 gem 'aws-sdk'
 
+# In order to get the most out of the Heroku platform
+gem 'rails_12factor', :group => :production
+# servidor para o heroku
+gem 'thin', :group => :production
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
