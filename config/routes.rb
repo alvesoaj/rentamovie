@@ -6,5 +6,9 @@ Rentamovie::Application.routes.draw do
     resources :movies
     resources :people
 
+    namespace :service do
+        resources :movies
+    end
+
     root :to => 'pages#index'
 end

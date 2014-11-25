@@ -15,7 +15,7 @@ Role.create([
 puts "Criando users"
 user = User.new({
     :name => "AJ Alves",
-    :email => "zerokol@ymail.com",
+    :email => "admin@rentamovie.com",
     :password => "123456789",
     :address => "Rua dos bobos n 0",
     :confirmed_at => Time.now
@@ -25,7 +25,7 @@ user.save
 
 User.create({
     :name => "Visitante da Loja",
-    :email => "visitante@loja.com",
+    :email => "visitante@rentamovie.com",
     :password => "123456789",
     :address => "Rua dos bobos n 100",
     :confirmed_at => Time.now
@@ -33,7 +33,7 @@ User.create({
 
 puts "Criando movies"
 Movie.create([
-    { :name => "Senhor dos Aneis 1", :description => "Um filme muito bom e muito longo, sim sim...", :image => File.open("app/assets/images/movies/lordofrings1.jpg") },
-    { :name => "Senhor dos Aneis 2", :description => "Um filme muito bom e muito longo, sim sim...", :image => File.open("app/assets/images/movies/lordofrings2.jpg") },
-    { :name => "Senhor dos Aneis 3", :description => "Um filme muito bom e muito longo, sim sim...", :image => File.open("app/assets/images/movies/lordofrings3.jpg") }
+    { :name => "Senhor dos Aneis 1", :description => "Um filme muito bom e muito longo, sim sim...", :image => File.open("app/assets/images/movies/lordofrings1.jpg"), :quantity => 5 },
+    { :name => "Senhor dos Aneis 2", :description => "Um filme muito bom e muito longo, sim sim...", :image => File.open("app/assets/images/movies/lordofrings2.jpg"), :quantity => 3 },
+    { :name => "Senhor dos Aneis 3", :description => "Um filme muito bom e muito longo, sim sim...", :image => File.open("app/assets/images/movies/lordofrings3.jpg"), :quantity => 6 }
 ])
